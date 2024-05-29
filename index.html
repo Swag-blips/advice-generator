@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advice Generator</title>
+    <meta
+      name="description"
+      content="Generate random pieces of advice to inspire and motivate you."
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -12,27 +17,32 @@
     />
   </head>
   <body>
-    <main id="advice-card-wrapper">
-      <section class="advice-card">
-        <p class="advice-number">Advice #117</p>
-        <p class="advice-text">
+    <main id="advice-card-wrapper" role="main">
+      <section class="advice-card" role="region" aria-labelledby="advice-title">
+        <p class="advice-number" aria-live="polite">Advice #117</p>
+        <blockquote class="advice-text" aria-live="polite">
           “It is easy to sit up and take notice, what's difficult is getting up
           and taking action.”
-        </p>
+        </blockquote>
         <figure class="advice-rule">
           <img
             src="./images/pattern-divider-desktop.svg"
-            alt="Pattern divider desktop"
+            alt="Pattern divider for desktop view"
             class="pattern-divider-desktop"
           />
           <img
             src="./images/pattern-divider-mobile.svg"
-            alt="Pattern divider mobile"
+            alt="Pattern divider for mobile view"
             class="pattern-divider-mobile"
           />
         </figure>
-        <figure class="dice-figure">
-          <img src="./images/icon-dice.svg" alt="dice" />
+        <figure
+          class="dice-figure"
+          role="button"
+          tabindex="0"
+          aria-label="Get new advice"
+        >
+          <img src="./images/icon-dice.svg" alt="Dice icon" />
         </figure>
       </section>
     </main>
