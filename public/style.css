@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #202733;
+}
+
+#advice-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.advice-card {
+  background-color: #313a48;
+  width: 540px;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 40px; /* Add padding to create space for the dice figure */
+  position: relative;
+}
+.advice-number {
+  color: #53ffaa;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4.09px;
+  font-weight: 800;
+}
+
+.advice-text {
+  color: #cee3e9;
+  text-align: center;
+  margin-top: 24px;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: -0.3px;
+  width: 444px;
+}
+.advice-rule {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pattern-divider-mobile {
+  display: none;
+}
+.dice-figure {
+  width: 64px;
+  height: 64px;
+  position: absolute; /* Changed from fixed to absolute */
+  bottom: -32px; /* Adjusted to align at the bottom */
+  background-color: #53ffaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  z-index: 50;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.dice-figure:hover {
+  box-shadow: 0 0 40px rgba(83, 225, 170, 1);
+}
+.dice-figure img {
+  padding: 20px;
+}
+
+@media (max-width: 1080px) {
+  .advice-card {
+    width: 343px;
+    height: auto; /* Removed fixed height */
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .advice-number {
+    font-size: 11px;
+    letter-spacing: 3.46px;
+  }
+  .advice-text {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.26px;
+    width: 259px;
+  }
+  .pattern-divider-mobile {
+    display: block;
+  }
+  .pattern-divider-desktop {
+    display: none;
+  }
+  .advice-rule {
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
+}
