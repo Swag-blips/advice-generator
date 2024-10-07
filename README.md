@@ -46,36 +46,17 @@ To set up and run the project locally, follow these steps:
 
 ## Project Structure
 
-advice-generator/
-│
-├── assets/
-│ └── images/
-│ └── logo.png
-├── css/
-│ └── styles.css
-├── js/
-│ └── script.js
-├── index.html
-├── README.md
-└── .gitignore
 
+- **public/images/**: Contains images used in the project.
+- **public/styles.css**: Contains the CSS styles for the project.
+- **public/script.js**: Contains the  compiled JavaScript code for fetching and displaying advice.
+- **public/index.html**: The main HTML file that structures the web app.
+- **src/app.ts**: Contains the main typescript file for the project
 
-- **assets/images/**: Contains images used in the project.
-- **css/styles.css**: Contains the CSS styles for the project.
-- **js/script.js**: Contains the JavaScript code for fetching and displaying advice.
-- **index.html**: The main HTML file that structures the web app.
-
-## Contributing
-Contributions are welcome! Please fork this repository and submit a pull request with your improvements.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## UPDATE!!!!
+- integration of typescript to add robust type checking to prevent bugs and potential edge cases
+The transition to TypeScript was made to introduce static type checking, which helps in catching errors during development rather than at runtime.
+This change enhances code reliability and makes the application more maintainable and scalable.
 
 ---
 
